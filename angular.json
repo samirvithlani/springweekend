@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "sundayAngular"
+    }
+  },
+  "defaultProject": "sundayAngular",
+  "cli": {
+    "analytics": false
+  }
 }
