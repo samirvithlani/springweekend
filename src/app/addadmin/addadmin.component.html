@@ -1,0 +1,10 @@
+
+FILTER:<input type="text" (keyup)="filterData($event.target.value)">
+SORT<button class="btn btn-primary" type="button"(click)="sort()">{{buttontext}}</button>
+<div>
+    <ul *ngFor="let admin of AdminList">
+        <li><a [routerLink]="['/admindetail',admin.admin_name]">AdminName = {{admin.admin_name}}</a></li>
+        <li>AdminEmail = {{admin.admin_email}}</li>
+        <li>AdminAge = {{admin.admin_age}}</li>
+    </ul>
+</div>
