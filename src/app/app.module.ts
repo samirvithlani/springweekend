@@ -9,6 +9,9 @@ import { ViewadminsComponent } from './viewadmins/viewadmins.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AdmindetailComponent } from './admindetail/admindetail.component';
+import { UsermenuComponent } from './usermenu/usermenu.component';
+import { HttpClientModule } from "@angular/common/http";
+import { AddemployeeComponent } from './addemployee/addemployee.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,15 @@ import { AdmindetailComponent } from './admindetail/admindetail.component';
     ViewadminsComponent,
     HeaderComponent,
     FooterComponent,
-    AdmindetailComponent
+    AdmindetailComponent,
+    UsermenuComponent,
+    AddemployeeComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
