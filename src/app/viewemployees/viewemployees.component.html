@@ -1,0 +1,24 @@
+<p-toast position="top-left"></p-toast>
+
+<p-table [value]="employeeList">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Employee Id</th>
+            <th>Employee Name</th>
+            <th>Employee Employee</th>
+            <th>Employee Age</th>
+            <th>Employee Salary</th>
+            <th>ACTION</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-employeeList>
+        <tr>
+            <td>{{employeeList.eId}}</td>
+            <td>{{employeeList.eName}}</td>
+            <td>{{employeeList.eEmail}}</td>
+            <td>{{employeeList.eAge}}</td>
+            <td>{{employeeList.eSalary}}</td>
+            <td><button class="p-button-success" type="button" (click)="deleteEmployee(employeeList.eId)">DELETE</button></td>
+        </tr>
+    </ng-template>
+</p-table>
